@@ -11,6 +11,8 @@ public class EnemyAI : MonoBehaviour
     private NavMeshAgent agent;
     private Animator animator;
     private Transform playerTransform;
+    private ImpactController impactController;
+
     private float nextUpdateTime = 0f;
     private float attackCooldown = 0f;
 
@@ -20,6 +22,7 @@ public class EnemyAI : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        impactController = GetComponentInChildren<ImpactController>();
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
@@ -31,6 +34,18 @@ public class EnemyAI : MonoBehaviour
             Debug.LogWarning("Player not found by EnemyAI.");
         }
     }
+
+    private void OnEnable()
+    {
+        impactController.OnImpact += HandleImpact;
+    }
+
+    private void OnDisable()
+    {
+        impactController.OnImpact -= HandleImpact;
+    }
+
+
 
     private void Update()
     {
@@ -44,6 +59,7 @@ public class EnemyAI : MonoBehaviour
         }
 
     }
+
 
     private void HandleAnimations()
     {
@@ -104,6 +120,11 @@ public class EnemyAI : MonoBehaviour
             IsOnRange = false;
             agent.SetDestination(playerTransform.position);
         }
+    }
+
+    private void HandleImpact(Impact impact)
+    {
+        //Handle Impact Logic Here ->
     }
 
     private void AttemptAttack(GameObject target)
