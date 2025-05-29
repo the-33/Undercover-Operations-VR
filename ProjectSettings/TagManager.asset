@@ -8,6 +8,7 @@ TagManager:
   - Wood
   - CinemachineTarget
   - Mag
+  - Flesh
   layers:
   - Default
   - TransparentFX
