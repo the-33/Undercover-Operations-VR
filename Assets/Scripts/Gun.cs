@@ -25,12 +25,12 @@ public class Gun : MonoBehaviour
     public XRSocketInteractorTag magAttachPoint;
 
     private bool shooting;
-    private AudioSource audio;
+    private AudioSource shotAudio;
 
     public void ShootBullet()
     {
         smokeParticles.Play();
-        audio.Play();
+        GetComponent<AudioSource>().Play();
 
         GameObject bullet = null;
         if (bulletPool.Count < maxBulletsInScene)
@@ -92,7 +92,7 @@ public class Gun : MonoBehaviour
     void Start()
     {
         UpdateMag();
-        audio = GetComponent<AudioSource>();
+        shotAudio = GetComponent<AudioSource>();
     }
 
     void Update()
