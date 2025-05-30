@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5384157895333200390}
   m_Layer: 11
   m_Name: Z_L_LegThigh
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,7 +57,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9fdb5531bdf185e448dd06dfa8192f8d, type: 2}
+  - {fileID: -876546973899608171, guid: e19b5bb6cb8e91e43b1b5d81a069296f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 3742803753309439835}
   m_Layer: 11
   m_Name: Base HumanLLegFoot
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 1535186046371764054}
   m_Layer: 11
   m_Name: Base HumanRCalf
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -205,9 +205,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3968937726124837824}
+  - component: {fileID: 8703773349041619069}
+  - component: {fileID: 507082472604838248}
   m_Layer: 11
   m_Name: Base HumanRArmPalm
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -232,6 +234,44 @@ Transform:
   - {fileID: 322650291718255689}
   m_Father: {fileID: 2554908521870767570}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8703773349041619069
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296769164968394898}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12, y: 0.1, z: 0.12}
+  m_Center: {x: -0.07, y: 0, z: 0}
+--- !u!114 &507082472604838248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296769164968394898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7cfb859f07e1d49883c3241b2927e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zone: 2
+  side: 1
+  impactLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!1 &350365171298938940
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,7 +286,7 @@ GameObject:
   - component: {fileID: 1482263294134491774}
   m_Layer: 11
   m_Name: Z_BodyTop
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -289,7 +329,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9fdb5531bdf185e448dd06dfa8192f8d, type: 2}
+  - {fileID: -876546973899608171, guid: e19b5bb6cb8e91e43b1b5d81a069296f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -380,7 +420,7 @@ GameObject:
   - component: {fileID: 5364633985296698784}
   m_Layer: 11
   m_Name: Base HumanLArmDigit22
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -412,7 +452,7 @@ GameObject:
   - component: {fileID: 4062663296115620130}
   m_Layer: 11
   m_Name: Base HumanLLegCalf
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -442,9 +482,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4249424295000988625}
+  - component: {fileID: 7774980935926614889}
+  - component: {fileID: 6168850192587435440}
   m_Layer: 11
   m_Name: Base HumanLArmUpperarm
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -465,6 +507,44 @@ Transform:
   - {fileID: 4431930497697356156}
   m_Father: {fileID: 8766879698554626988}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7774980935926614889
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985251599495450405}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.28, y: 0.11, z: 0.09}
+  m_Center: {x: -0.12, y: 0, z: 0}
+--- !u!114 &6168850192587435440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985251599495450405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7cfb859f07e1d49883c3241b2927e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zone: 2
+  side: 0
+  impactLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!1 &1051409814358983048
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,9 +554,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7243900982341949189}
+  - component: {fileID: 5310389061915490044}
+  - component: {fileID: 2210693093186154887}
   m_Layer: 11
   m_Name: Base HumanLArmPalm
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -501,6 +583,44 @@ Transform:
   - {fileID: 1136960853135546998}
   m_Father: {fileID: 4431930497697356156}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5310389061915490044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051409814358983048}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12, y: 0.1, z: 0.12}
+  m_Center: {x: -0.07, y: 0, z: 0}
+--- !u!114 &2210693093186154887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051409814358983048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7cfb859f07e1d49883c3241b2927e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zone: 2
+  side: 0
+  impactLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!1 &1375422100579534460
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,7 +632,7 @@ GameObject:
   - component: {fileID: 7871698783927381370}
   m_Layer: 11
   m_Name: Base HumanRArmDigit11
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -544,10 +664,9 @@ GameObject:
   - component: {fileID: 2361685738312471923}
   - component: {fileID: 4758631245396305874}
   - component: {fileID: 534035270730176280}
-  - component: {fileID: 8564790755268490767}
   m_Layer: 11
   m_Name: Z_R_Upperarm
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -590,7 +709,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9fdb5531bdf185e448dd06dfa8192f8d, type: 2}
+  - {fileID: -876546973899608171, guid: e19b5bb6cb8e91e43b1b5d81a069296f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -644,28 +763,6 @@ MonoBehaviour:
   impactLayerMask:
     serializedVersion: 2
     m_Bits: 1024
---- !u!64 &8564790755268490767
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408463975399427939}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 1024
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 3063
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4633338100144760241, guid: 8f7380da49034cd488ddff94b1ac35d1, type: 3}
 --- !u!1 &1561484146813573371
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,7 +774,7 @@ GameObject:
   - component: {fileID: 9026338287565769927}
   m_Layer: 11
   m_Name: Base HumanRArmDigit21
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -709,7 +806,7 @@ GameObject:
   - component: {fileID: 2516449488624574873}
   m_Layer: 11
   m_Name: Base HumanRArmDigit42
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -741,7 +838,7 @@ GameObject:
   - component: {fileID: 5309150477829490788}
   m_Layer: 11
   m_Name: Base HumanLArmDigit53
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -772,7 +869,7 @@ GameObject:
   - component: {fileID: 6502188840462020216}
   m_Layer: 11
   m_Name: Base HumanRArmDigit22
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -804,7 +901,7 @@ GameObject:
   - component: {fileID: 8766879698554626988}
   m_Layer: 11
   m_Name: Base HumanLArmCollarbone
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -836,7 +933,7 @@ GameObject:
   - component: {fileID: 294386328774420263}
   m_Layer: 11
   m_Name: Base HumanRArmDigit53
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -870,7 +967,7 @@ GameObject:
   - component: {fileID: 1268749664152654423}
   m_Layer: 11
   m_Name: Z_Hip
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -913,7 +1010,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9fdb5531bdf185e448dd06dfa8192f8d, type: 2}
+  - {fileID: -876546973899608171, guid: e19b5bb6cb8e91e43b1b5d81a069296f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -999,7 +1096,7 @@ GameObject:
   - component: {fileID: 5132389490947537644}
   m_Layer: 11
   m_Name: Base HumanRArmDigit12
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1030,7 +1127,7 @@ GameObject:
   - component: {fileID: 4905771730940623320}
   m_Layer: 11
   m_Name: Base HumanLArmDigit33
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1061,7 +1158,7 @@ GameObject:
   - component: {fileID: 948075578806254006}
   m_Layer: 11
   m_Name: Base HumanLArmDigit32
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1093,7 +1190,7 @@ GameObject:
   - component: {fileID: 3870584865058124855}
   m_Layer: 11
   m_Name: Base HumanHeadREyelid
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1124,7 +1221,7 @@ GameObject:
   - component: {fileID: 5340637565660954537}
   m_Layer: 11
   m_Name: Base HumanLEye
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1155,10 +1252,9 @@ GameObject:
   - component: {fileID: 3650901721890686933}
   - component: {fileID: 7211301400165944772}
   - component: {fileID: 1913996476789211143}
-  - component: {fileID: 8154551793520427283}
   m_Layer: 11
   m_Name: Z_L_ArmPalm
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1201,7 +1297,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9fdb5531bdf185e448dd06dfa8192f8d, type: 2}
+  - {fileID: -876546973899608171, guid: e19b5bb6cb8e91e43b1b5d81a069296f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1267,28 +1363,6 @@ MonoBehaviour:
   impactLayerMask:
     serializedVersion: 2
     m_Bits: 1024
---- !u!64 &8154551793520427283
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2901437444325627988}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 1024
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 3063
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4735216759056748791, guid: 8f7380da49034cd488ddff94b1ac35d1, type: 3}
 --- !u!1 &2903994371314592411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,7 +1374,7 @@ GameObject:
   - component: {fileID: 5064271382105539268}
   m_Layer: 11
   m_Name: Base HumanRFoot
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1332,7 +1406,7 @@ GameObject:
   - component: {fileID: 8697562064665835074}
   m_Layer: 11
   m_Name: Base HumanLArmDigit31
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1364,7 +1438,7 @@ GameObject:
   - component: {fileID: 6390846734778061882}
   m_Layer: 11
   m_Name: Base HumanRArmDigit41
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1394,9 +1468,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4431930497697356156}
+  - component: {fileID: 2938059447039647666}
+  - component: {fileID: 1273158814782209818}
   m_Layer: 11
   m_Name: Base HumanLArmForearm
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1417,6 +1493,44 @@ Transform:
   - {fileID: 7243900982341949189}
   m_Father: {fileID: 4249424295000988625}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2938059447039647666
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3222701644758352455}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.27, y: 0.06, z: 0.11}
+  m_Center: {x: -0.16, y: 0, z: 0}
+--- !u!114 &1273158814782209818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3222701644758352455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7cfb859f07e1d49883c3241b2927e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zone: 2
+  side: 0
+  impactLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!1 &3615559951638717194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1428,7 +1542,7 @@ GameObject:
   - component: {fileID: 4704739476017548918}
   m_Layer: 11
   m_Name: Base HumanHead
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1464,7 +1578,7 @@ GameObject:
   - component: {fileID: 4323838219832741494}
   m_Layer: 11
   m_Name: Base HumanLArmDigit42
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1496,7 +1610,7 @@ GameObject:
   - component: {fileID: 4753632607121812764}
   m_Layer: 11
   m_Name: Base HumanLArmDigit43
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1527,7 +1641,7 @@ GameObject:
   - component: {fileID: 3592079938977076229}
   m_Layer: 11
   m_Name: Base HumanRArmDigit31
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1562,7 +1676,7 @@ GameObject:
   - component: {fileID: 1436075211698174600}
   m_Layer: 11
   m_Name: Z_R_LegCalf
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1605,7 +1719,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9fdb5531bdf185e448dd06dfa8192f8d, type: 2}
+  - {fileID: -876546973899608171, guid: e19b5bb6cb8e91e43b1b5d81a069296f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1691,7 +1805,7 @@ GameObject:
   - component: {fileID: 6110265903233878879}
   m_Layer: 11
   m_Name: Base HumanRThigh
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1723,10 +1837,9 @@ GameObject:
   - component: {fileID: 2491792290255003107}
   - component: {fileID: 6952043672471687283}
   - component: {fileID: 1276199520638644741}
-  - component: {fileID: 707849621378800975}
   m_Layer: 11
   m_Name: Z_R_ArmPalm
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1769,7 +1882,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9fdb5531bdf185e448dd06dfa8192f8d, type: 2}
+  - {fileID: -876546973899608171, guid: e19b5bb6cb8e91e43b1b5d81a069296f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1835,28 +1948,6 @@ MonoBehaviour:
   impactLayerMask:
     serializedVersion: 2
     m_Bits: 1024
---- !u!64 &707849621378800975
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3842686387679856003}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 1024
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 3063
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8977240297018112714, guid: 8f7380da49034cd488ddff94b1ac35d1, type: 3}
 --- !u!1 &3952813081135159023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,7 +1959,7 @@ GameObject:
   - component: {fileID: 8788329689797484860}
   m_Layer: 11
   m_Name: Base HumanHeadJaw
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1899,7 +1990,7 @@ GameObject:
   - component: {fileID: 8180202420289745665}
   m_Layer: 11
   m_Name: Base HumanRibcage
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1931,9 +2022,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2554908521870767570}
+  - component: {fileID: 3792095960783812229}
+  - component: {fileID: 5457202436341375075}
   m_Layer: 11
   m_Name: Base HumanRArmForearm
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1954,6 +2047,44 @@ Transform:
   - {fileID: 3968937726124837824}
   m_Father: {fileID: 6389235289577634660}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3792095960783812229
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108486901154096684}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.27, y: 0.06, z: 0.11}
+  m_Center: {x: -0.16, y: 0, z: 0}
+--- !u!114 &5457202436341375075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108486901154096684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7cfb859f07e1d49883c3241b2927e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zone: 2
+  side: 1
+  impactLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!1 &4224253407688705196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,7 +2096,7 @@ GameObject:
   - component: {fileID: 4330569467277994782}
   m_Layer: 11
   m_Name: Base HumanLArmDigit41
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1997,7 +2128,7 @@ GameObject:
   - component: {fileID: 8466795594021092958}
   m_Layer: 11
   m_Name: Base HumanLLegThigh
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2029,7 +2160,7 @@ GameObject:
   - component: {fileID: 4101664073467192222}
   m_Layer: 11
   m_Name: Base HumanHeadLEyelid
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2060,7 +2191,7 @@ GameObject:
   - component: {fileID: 5523624416337667380}
   m_Layer: 11
   m_Name: Base HumanLLegDigit11
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2091,7 +2222,7 @@ GameObject:
   - component: {fileID: 1782723733704255185}
   m_Layer: 11
   m_Name: Base HumanNeck
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2123,7 +2254,7 @@ GameObject:
   - component: {fileID: 8881210638500589525}
   m_Layer: 11
   m_Name: Base HumanRArmDigit33
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2154,7 +2285,7 @@ GameObject:
   - component: {fileID: 1722274584276097606}
   m_Layer: 11
   m_Name: Base HumanRDigit11
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2186,7 +2317,7 @@ GameObject:
   - component: {fileID: 7245280114907179553}
   m_Layer: 11
   m_Name: Z_Body
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2229,7 +2360,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9fdb5531bdf185e448dd06dfa8192f8d, type: 2}
+  - {fileID: -876546973899608171, guid: e19b5bb6cb8e91e43b1b5d81a069296f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2277,7 +2408,7 @@ GameObject:
   - component: {fileID: 3374382251099633709}
   m_Layer: 11
   m_Name: Base HumanRArmDigit43
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2379,8 +2510,8 @@ NavMeshAgent:
   m_GameObject: {fileID: 5624611102173000267}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
+  m_Radius: 1
+  m_Speed: 4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 360
@@ -2406,7 +2537,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   updateRate: 0.5
   attackDelay: 1
-  stopDistance: 1.5
+  stopDistance: 1
+  maxHp: 10
 --- !u!65 &5072057486655474126
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2440,7 +2572,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f47e11be24d646419503ec17d75c49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impactAgents: []
+  impactAgents:
+  - {fileID: 6168850192587435440}
+  - {fileID: 1273158814782209818}
+  - {fileID: 2210693093186154887}
+  - {fileID: 1135922659308985045}
+  - {fileID: 5457202436341375075}
+  - {fileID: 507082472604838248}
+  - {fileID: 6608888553323984113}
+  - {fileID: 2250734153164560749}
+  - {fileID: 1159052955852479169}
+  - {fileID: 5384157895333200390}
+  - {fileID: 7723610569306075611}
+  - {fileID: 5751348159420461369}
 --- !u!1 &5739061803741627739
 GameObject:
   m_ObjectHideFlags: 0
@@ -2452,7 +2596,7 @@ GameObject:
   - component: {fileID: 3414542359383481925}
   m_Layer: 11
   m_Name: Base HumanSpine2
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2484,7 +2628,7 @@ GameObject:
   - component: {fileID: 2483656778410731993}
   m_Layer: 11
   m_Name: Base HumanRArmDigit32
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2516,7 +2660,7 @@ GameObject:
   - component: {fileID: 1311920259261463518}
   m_Layer: 11
   m_Name: Base HumanRArmCollarbone
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2548,7 +2692,7 @@ GameObject:
   - component: {fileID: 1615460660392121652}
   m_Layer: 11
   m_Name: Base HumanLArmDigit21
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2580,7 +2724,7 @@ GameObject:
   - component: {fileID: 2921754430348680240}
   m_Layer: 11
   m_Name: Base HumanHeadREye
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2614,7 +2758,7 @@ GameObject:
   - component: {fileID: 5751348159420461369}
   m_Layer: 11
   m_Name: Z_R_LegThigh
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2657,7 +2801,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9fdb5531bdf185e448dd06dfa8192f8d, type: 2}
+  - {fileID: -876546973899608171, guid: e19b5bb6cb8e91e43b1b5d81a069296f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2741,9 +2885,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6389235289577634660}
+  - component: {fileID: 1583363930140592399}
+  - component: {fileID: 1135922659308985045}
   m_Layer: 11
   m_Name: Base HumanRArmUpperarm
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2764,6 +2910,44 @@ Transform:
   - {fileID: 2554908521870767570}
   m_Father: {fileID: 1311920259261463518}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1583363930140592399
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260077541997867607}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.28, y: 0.11, z: 0.09}
+  m_Center: {x: -0.12, y: 0, z: 0}
+--- !u!114 &1135922659308985045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260077541997867607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7cfb859f07e1d49883c3241b2927e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zone: 2
+  side: 1
+  impactLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!1 &6604215258188234401
 GameObject:
   m_ObjectHideFlags: 0
@@ -2778,7 +2962,7 @@ GameObject:
   - component: {fileID: 3692652491418325202}
   m_Layer: 11
   m_Name: Z_L_LegCalf
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2821,7 +3005,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9fdb5531bdf185e448dd06dfa8192f8d, type: 2}
+  - {fileID: -876546973899608171, guid: e19b5bb6cb8e91e43b1b5d81a069296f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2907,7 +3091,7 @@ GameObject:
   - component: {fileID: 4584911113500824959}
   m_Layer: 11
   m_Name: Base HumanRArmDigit23
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2938,7 +3122,7 @@ GameObject:
   - component: {fileID: 1405157420871209190}
   m_Layer: 11
   m_Name: Base HumanSpine1
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2970,7 +3154,7 @@ GameObject:
   - component: {fileID: 322650291718255689}
   m_Layer: 11
   m_Name: Base HumanRArmDigit51
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3002,7 +3186,7 @@ GameObject:
   - component: {fileID: 2810741533258749951}
   m_Layer: 11
   m_Name: Base HumanLArmDigit12
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3032,11 +3216,10 @@ GameObject:
   m_Component:
   - component: {fileID: 999914478252646432}
   - component: {fileID: 4912546702549481037}
-  - component: {fileID: 7094738379005040024}
   - component: {fileID: 450219497637995384}
   m_Layer: 11
   m_Name: Z_L_Upperarm
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3079,7 +3262,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9fdb5531bdf185e448dd06dfa8192f8d, type: 2}
+  - {fileID: -876546973899608171, guid: e19b5bb6cb8e91e43b1b5d81a069296f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3116,28 +3299,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.13820803, y: -0.026854433, z: 0.25933415}
     m_Extent: {x: 0.16926742, y: 0.11703322, z: 0.18861726}
   m_DirtyAABB: 0
---- !u!64 &7094738379005040024
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7252584310047115490}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 1024
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 3063
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: -1
-  m_Mesh: {fileID: -6284539026627272218, guid: 8f7380da49034cd488ddff94b1ac35d1, type: 3}
 --- !u!114 &450219497637995384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3166,7 +3327,7 @@ GameObject:
   - component: {fileID: 2860595206545022324}
   m_Layer: 11
   m_Name: Base HumanLArmDigit23
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3197,7 +3358,7 @@ GameObject:
   - component: {fileID: 1108501403422532926}
   m_Layer: 11
   m_Name: Base HumanRArmDigit52
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3229,7 +3390,7 @@ GameObject:
   - component: {fileID: 5950041274546602790}
   m_Layer: 11
   m_Name: Base HumanPelvis
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3262,11 +3423,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1861397969477924932}
   - component: {fileID: 7609372224857738670}
-  - component: {fileID: 3846618777538852082}
   - component: {fileID: 1030356769249349661}
   m_Layer: 11
   m_Name: Z_L_Forearm
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3309,7 +3469,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9fdb5531bdf185e448dd06dfa8192f8d, type: 2}
+  - {fileID: -876546973899608171, guid: e19b5bb6cb8e91e43b1b5d81a069296f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3345,28 +3505,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.33271068, y: 0.07449715, z: -0.014274962}
     m_Extent: {x: 0.19994229, y: 0.16534746, z: 0.08456549}
   m_DirtyAABB: 0
---- !u!64 &3846618777538852082
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8302904982953033482}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 1024
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 3063
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1499192976303270135, guid: 8f7380da49034cd488ddff94b1ac35d1, type: 3}
 --- !u!114 &1030356769249349661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3398,7 +3536,7 @@ GameObject:
   - component: {fileID: 3946727648759987931}
   m_Layer: 11
   m_Name: Z_Head
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3441,7 +3579,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9fdb5531bdf185e448dd06dfa8192f8d, type: 2}
+  - {fileID: -876546973899608171, guid: e19b5bb6cb8e91e43b1b5d81a069296f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3520,8 +3658,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.15378536
-  m_Center: {x: 0.00000004509233, y: -0.017403707, z: 1.6408844}
+  m_Radius: 0.16
+  m_Center: {x: 0.00000004509233, y: -0.017403707, z: 1.69}
 --- !u!1 &8738989587535359227
 GameObject:
   m_ObjectHideFlags: 0
@@ -3533,7 +3671,7 @@ GameObject:
   - component: {fileID: 1136960853135546998}
   m_Layer: 11
   m_Name: Base HumanLArmDigit51
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3565,7 +3703,7 @@ GameObject:
   - component: {fileID: 2774651454955962726}
   m_Layer: 11
   m_Name: Base HumanLArmDigit11
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3597,7 +3735,7 @@ GameObject:
   - component: {fileID: 5224288998584548518}
   m_Layer: 11
   m_Name: Base HumanLArmDigit52
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3628,11 +3766,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2760209348397550005}
   - component: {fileID: 5733545030591356758}
-  - component: {fileID: 7527025746807142260}
   - component: {fileID: 1492933864652648281}
   m_Layer: 11
   m_Name: Z_R_Forearm
-  m_TagString: Untagged
+  m_TagString: Flesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3675,7 +3812,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9fdb5531bdf185e448dd06dfa8192f8d, type: 2}
+  - {fileID: -876546973899608171, guid: e19b5bb6cb8e91e43b1b5d81a069296f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3711,28 +3848,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.33271015, y: 0.074496835, z: 0.014275014}
     m_Extent: {x: 0.19994229, y: 0.16534758, z: 0.08456545}
   m_DirtyAABB: 0
---- !u!64 &7527025746807142260
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9133488110506027765}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 1024
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 3063
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4237203632617906206, guid: 8f7380da49034cd488ddff94b1ac35d1, type: 3}
 --- !u!114 &1492933864652648281
 MonoBehaviour:
   m_ObjectHideFlags: 0

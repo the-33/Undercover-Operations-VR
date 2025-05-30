@@ -11,12 +11,16 @@ public class EnemyAI : MonoBehaviour
     private NavMeshAgent agent;
     private Animator animator;
     private Transform playerTransform;
+    private PlayerStats playerStats;
     private ImpactController impactController;
 
     private float nextUpdateTime = 0f;
     private float attackCooldown = 0f;
 
     private bool IsOnRange = false;
+
+    private int hp;
+    public int maxHp = 10;
 
     private void Awake()
     {
@@ -28,11 +32,17 @@ public class EnemyAI : MonoBehaviour
         if (player != null)
         {
             playerTransform = player.transform;
+            playerStats = player.GetComponent<PlayerStats>();
         }
         else
         {
             Debug.LogWarning("Player not found by EnemyAI.");
         }
+    }
+
+    private void Start()
+    {
+        hp = maxHp;
     }
 
     private void OnEnable()
@@ -124,7 +134,27 @@ public class EnemyAI : MonoBehaviour
 
     private void HandleImpact(Impact impact)
     {
-        //Handle Impact Logic Here ->
+        switch (impact.Zone)
+        {
+            case Impact.ImpactZone.Head:
+                hp = 0;
+                break;
+            case Impact.ImpactZone.Body:
+                hp -= 5;
+                break;
+            case Impact.ImpactZone.Arms:
+                hp -= 2;
+                break;
+            case Impact.ImpactZone.Legs:
+                hp -= 2;
+                break;
+        }
+
+        if (hp <= 0)
+        {
+            playerStats.AddKill();
+            Destroy(gameObject);
+        }
     }
 
     private void AttemptAttack(GameObject target)
@@ -140,6 +170,6 @@ public class EnemyAI : MonoBehaviour
     {
         // Animations
         animator.SetTrigger("attack");
-        Debug.Log($"Enemy attacks {target.name}!");
+        playerStats.TakeDamage(5);
     }
 }
